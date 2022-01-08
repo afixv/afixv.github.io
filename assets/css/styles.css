@@ -477,6 +477,34 @@ img {
 }
 
 /*==================== FOOTER ====================*/
+footer {
+  background-color: var(--first-color);
+  padding: var(--mb-2-5);
+}
+
+footer p {
+  color: var(--body-color);
+  font-size: var(--smaller-font-size);
+  text-align: center;
+}
+
+footer span {
+  font-weight: var(--font-medium);
+  font-size: var(--smaller-font-size);
+}
+
+.footer__socials {
+  text-align: center;
+}
+
+.footer__icon {
+  color: var(--body-color);
+  display: inline-block;
+}
+
+.footer__icon:hover {
+  color: #ffd900;
+}
 
 /*========== SCROLL UP ==========*/
 
@@ -484,14 +512,14 @@ img {
 
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar {
-  width: .60rem;
+  width: 0.6rem;
   background-color: var(--scroll-bar-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 /*==================== MEDIA QUERIES ====================*/
