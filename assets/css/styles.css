@@ -362,6 +362,7 @@ p {
 .button__icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
+  transition: transform 0.3s ease-out;
 }
 
 .button--flex {
@@ -512,19 +513,57 @@ p {
   background-color: var(--first-color);
   transform: translate(6px, -7px);
 }
-/*==================== MOTIVATION ====================*/
-.motivation__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-2);
+/*==================== Pr ====================*/
+.portfolio__contaienr {
+  overflow: initial;
 }
 
-/* Active Modal */
-
-/*==================== EXPECTATION ====================*/
-.expectation__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-1-5);
+.portfolio__content {
+  padding: 0 1.5rem;
 }
+
+.portfolio__img {
+  width: 400px;
+  border-radius: 1rem;
+  justify-self: center;
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button .button_icon {
+  transition: transform 0.2s ease-out;
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(0.25rem);
+  transition: transform 0.3s ease-in;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: '';
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -.5rem;
+}
+.swiper-button-next {
+  right: -.5rem;
+}
+
+
 
 /*==================== FOOTER ====================*/
 footer {
@@ -663,6 +702,16 @@ footer span {
     margin: 0;
   }
 
+  .portfolio__img {
+    width: 500px;
+   
+  }
+
+  .portfolio__container {
+
+
+  }
+
   .section {
     padding: 6rem 0rem 2rem;
   }
@@ -678,7 +727,7 @@ footer span {
 
   .header,
   .main {
-    padding: 0 1rem;
+    padding: 0 0rem;
   }
 
   .nav {
@@ -757,7 +806,8 @@ footer span {
     order: 1;
   }
 
-  .expectation__title, .expectation__desc {
+  .expectation__title,
+  .expectation__desc {
     text-align: end;
   }
 
@@ -768,3 +818,8 @@ footer span {
 }
 
 /* For large devices */
+@media screen and (min-width: 1024px) {
+  .portfolio__img {
+    width: 700px;
+  }
+}
